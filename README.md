@@ -3,11 +3,8 @@
 #### Ruchi Bhoot<sup>1</sup>, Tuhin Khare<sup>2,^</sup>, Manoj Agarwal<sup>3</sup>, Siddharth Jaiswal<sup>4,^</sup> and [Yogesh Simmhan](https://cds.iisc.ac.in/faculty/simmhan/)<sup>1</sup>
 
 <sup>1</sup>Indian Institute of Science, Bangalore, India
-
 <sup>2</sup>Georgia Institute of Technology, Atlanta, GA, USA
-
 <sup>3</sup>GiKA.AI, Bangalore, India
-
 <sup>4</sup>Indian Institute of Technology (IIT), Kharagpur, India
 
 ruchibhoot@iisc.ac.in, tkhare7@gatech.edu, agarwalm@gikagraph.ai, siddsjaiswal@kgpian.iitkgp.ac.in, simmhan@iisc.ac.in
@@ -18,6 +15,20 @@ ruchibhoot@iisc.ac.in, tkhare7@gatech.edu, agarwalm@gikagraph.ai, siddsjaiswal@k
 To address this gap, we propose a novel optimization function, to maximize the number of local triangles in the partitions as an additional objective function. Triangle count is an effective metric to measure the conservation of community structure. Further, we propose a family of cascading heuristics to perform online partitioning over an edge stream of a graph, which use three complementary state data structures: Bloom Filters, Triangle Map and High degree Map. Each state adds tangible value to meeting our objectives. These are implemented as part of our **TriParts** distributed edge-based streaming partitioner.
 We validate our partitioning algorithms on six diverse real world graphs, comprising up to 1.6B edges, with varying triangle densities, using both random and BFS ordered edge streams. Our best heuristic BTH outperforms the state-of-the-art DBH and HDRF streaming graph partitioners on the triangle-count metric by up to 4−8.3x while maintaining competitive vertex replication factor and edge-balancing. We are also able to achieve an ingest rate of 500k edges/sec.
 
+## Attribution
+[Triparts: Scalable Streaming Graph Partitioning to Enhance Community Structure]([https://www.vldb.org/pvldb/vol18/p2992-simmhan.pdf](https://doi.org/10.14778/3746405.3746423)), Ruchi Bhoot, Tuhin Khare, Manoj Agarwal, Siddharth Jaiswal, and Yogesh Simmhan, Proceedings of the VLDB Endowment, Volume 18, Issue 9, Pages 2992-3006, 2025  *(Artifact Available Badge)*
+```
+@article{bhoot2025triparts,
+  title     = {Triparts: Scalable Streaming Graph Partitioning to Enhance Community Structure},
+  author    = {Ruchi Bhoot and Tuhin Khare and Manoj Agarwal and Siddharth Jaiswal and Yogesh Simmhan},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {18},
+  number    = {9},
+  pages     = {2992-3006},
+  year      = {2025},
+  doi       = {https://doi.org/10.14778/3746405.3746423}
+}
+```
 ## Transparency and Reproducibility
 
 This supplemental material provides instructions for installing and running our partitioning algorithms.
