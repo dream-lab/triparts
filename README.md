@@ -16,7 +16,7 @@ To address this gap, we propose a novel optimization function, to maximize the n
 We validate our partitioning algorithms on six diverse real world graphs, comprising up to 1.6B edges, with varying triangle densities, using both random and BFS ordered edge streams. Our best heuristic BTH outperforms the state-of-the-art DBH and HDRF streaming graph partitioners on the triangle-count metric by up to 4−8.3x while maintaining competitive vertex replication factor and edge-balancing. We are also able to achieve an ingest rate of 500k edges/sec.
 
 ## Attribution
-[Triparts: Scalable Streaming Graph Partitioning to Enhance Community Structure]([https://www.vldb.org/pvldb/vol18/p2992-simmhan.pdf](https://doi.org/10.14778/3746405.3746423)), Ruchi Bhoot, Tuhin Khare, Manoj Agarwal, Siddharth Jaiswal, and Yogesh Simmhan, Proceedings of the VLDB Endowment, Volume 18, Issue 9, Pages 2992-3006, 2025  *(Artifact Available Badge)*
+[Triparts: Scalable Streaming Graph Partitioning to Enhance Community Structure](https://www.vldb.org/pvldb/vol18/p2992-simmhan.pdf), Ruchi Bhoot, Tuhin Khare, Manoj Agarwal, Siddharth Jaiswal, and Yogesh Simmhan, Proceedings of the VLDB Endowment, Volume 18, Issue 9, Pages 2992-3006, 2025  *(Artifact Available Badge)*
 ```
 @article{bhoot2025triparts,
   title     = {Triparts: Scalable Streaming Graph Partitioning to Enhance Community Structure},
